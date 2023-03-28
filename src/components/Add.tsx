@@ -41,7 +41,7 @@ function Add({title, children,number}: AddProps){
                     </button>                
                 </form>
             </div>
-            {open && <div>{children}</div>}
+            {/* {open && <div>{children}</div>} */}
         </div>
     )
 }
