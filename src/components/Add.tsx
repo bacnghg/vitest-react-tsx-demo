@@ -1,19 +1,13 @@
-import React, {useState} from 'react'
-import './App.css'
-import Accordion from './components/Accordion'
-import Add from './components/Add'
+import { useState } from "react";
 
-// function App() {
+type AddProps = {
+    title: string;
+    children: React.ReactNode;
+    number: number;
+};
+function Add({title, children,number}: AddProps){
 
-
-//   type AppProps = {
-//     title: string;
-//     children: React.ReactNode;
-//     number: number;
-// };
-function App(){
-
-    // const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false)
     const [numberOne, setNumberOne] = useState(0)
     const [numberTwo, setNumberTwo] = useState(0)
     const [result, setResult] = useState(numberOne + numberTwo)
@@ -25,7 +19,7 @@ function App(){
     return (
         <div className="Add">
             <div>
-                <h3>Addition</h3>
+                <h3>{title}</h3>
                 <form action="">
                     <label>Number 1: </label>
                     <input 
@@ -47,10 +41,9 @@ function App(){
                     </button>                
                 </form>
             </div>
-            {/* {open && <div>{children}</div>} */}
+            {open && <div>{children}</div>}
         </div>
     )
 }
 
-
-export default App
+export default Add
