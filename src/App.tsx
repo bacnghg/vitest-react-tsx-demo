@@ -37,7 +37,7 @@ function App(){
                         onClick={addNumber}
                         > Total 
                     </button>   
-                    <h2>{result}</h2>             
+                    <h2 role="h2">{result}</h2>             
             </div>
         </div>
     )
