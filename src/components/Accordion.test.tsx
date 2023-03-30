@@ -11,8 +11,8 @@ describe("Accordion", () => {
     })
 
     test("should add two numbers", () => {
-        // expect( 1 + 1). toBe(2);
-        expect(screen.getByText('hola')).toBeDefined()
+         expect( 1 + 1).toBe(3);
+        // expect(screen.getByText('hola')).toBeDefined()
     });
 
     test('should not show the content at the start', () => {
@@ -31,3 +31,6 @@ describe("Accordion", () => {
 
     })
 })
+
+// Tạo 1 example code function cơ bản 
+// Viết test code cho nó 
