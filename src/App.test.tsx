@@ -19,13 +19,12 @@ describe("App test func", () => {
         expect(screen.getByText(/0/i)).toBeDefined
     })
 
-    test('Checkvalue number input', () => {
+    test('Checkvalue number one input', () => {
         render(<App />);
         const buttonElm = screen.getByTestId('iNumberOne')
         fireEvent.click(buttonElm)
 
     })
-
 
     // Number two
     test('the label is numbertwo', () => {

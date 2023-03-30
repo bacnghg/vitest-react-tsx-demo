@@ -11,7 +11,7 @@ describe("Accordion", () => {
     })
 
     test("should add two numbers", () => {
-         expect( 1 + 1).toBe(3);
+         expect( 1 + 2).toBe(3);
         // expect(screen.getByText('hola')).toBeDefined()
     });
 
