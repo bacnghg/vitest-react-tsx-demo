@@ -1,7 +1,5 @@
 - Project React tsx
 - The project test React TSX using vitest
 - Viết mô tả chức năng
-- Viết 1 chức năng (Cộ
-- Cộng trừ nhân chia trên màn hình)
+- Viết 1 chức năng (Cộng trừ nhân chia trên màn hình)
 - Viết test code
-- Estimate thời gian bao lâu
