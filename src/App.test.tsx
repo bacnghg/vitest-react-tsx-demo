@@ -7,6 +7,7 @@ describe("App test func", () => {
         expect(screen.getByText(/Addition Component/i)).toBeDefined
     })
 
+    // Number one
     test('the label is number one', () => {
         render(<App />);
         expect(screen.getByText(/Number 1:/i)).toBeDefined
@@ -17,6 +18,16 @@ describe("App test func", () => {
         fireEvent.click(buttonElm)
         expect(screen.getByText(/0/i)).toBeDefined
     })
+
+    test('Checkvalue number input', () => {
+        render(<App />);
+        const buttonElm = screen.getByTestId('iNumberOne')
+        fireEvent.click(buttonElm)
+
+    })
+
+
+    // Number two
     test('the label is numbertwo', () => {
         render(<App />);
         expect(screen.getByText(/Number 2:/i)).toBeDefined
@@ -27,6 +38,8 @@ describe("App test func", () => {
         fireEvent.click(buttonElm)
         expect(screen.getByText(/0/i)).toBeDefined
     })
+
+    // button total
     test('Test click check Total result', () => {
         render(<App />);
         const buttonElm = screen.getByTestId('resultId')
