@@ -2,12 +2,14 @@ import React, {useState} from 'react'
 import './App.css'
 import Accordion from './components/Accordion'
 import Add from './components/Add'
+import { useTotal } from './hooks/useTotal'
 
 function App(){
     // const [open, setOpen] = useState(false)
-    const [numberOne, setNumberOne] = useState(0)
-    const [numberTwo, setNumberTwo] = useState(0)
-    const [result, setResult] = useState(numberOne + numberTwo)
+    // const [numberOne, setNumberOne] = useState(0)
+    // const [numberTwo, setNumberTwo] = useState(0)
+    // const [result, setResult] = useState(numberOne + numberTwo)
+    const { numberOne, setNumberOne, numberTwo, setNumberTwo, result, setResult} = useTotal()
 
     function addNumber() {
         setResult(numberOne + numberTwo)
