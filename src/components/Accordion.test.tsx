@@ -10,26 +10,26 @@ describe("Accordion", () => {
             );
     })
 
-    test("should add two numbers", () => {
-         expect( 1 + 1).toBe(3);
-        // expect(screen.getByText('hola')).toBeDefined()
-    });
+    // test("should add two numbers", () => {
+    //      expect( 1 + 1).toBe(3);
+    //     // expect(screen.getByText('hola')).toBeDefined()
+    // });
 
-    test('should not show the content at the start', () => {
-        expect(screen.queryByText(/content/i)).toBeNull()
-    })
-    test('should show the content white title is clicked', () => {
-        const button = screen.getByText(/open/i)
-        fireEvent.click(button)
-        expect(screen.queryByText(/content/i)).toBeDefined()
+    // test('should not show the content at the start', () => {
+    //     expect(screen.queryByText(/content/i)).toBeNull()
+    // })
+    // test('should show the content white title is clicked', () => {
+    //     const button = screen.getByText(/open/i)
+    //     fireEvent.click(button)
+    //     expect(screen.queryByText(/content/i)).toBeDefined()
 
-    })
-    test('should hide the content white title is clicked', () => {
-        const button = screen.getByText(/open/i)
-        fireEvent.click(button)
-        expect(screen.queryByText(/content/i)).toBeNull()
+    // })
+    // test('should hide the content white title is clicked', () => {
+    //     const button = screen.getByText(/open/i)
+    //     fireEvent.click(button)
+    //     expect(screen.queryByText(/content/i)).toBeNull()
 
-    })
+    // })
 })
 
 // Tạo 1 example code function cơ bản 

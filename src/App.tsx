@@ -14,30 +14,32 @@ function App(){
     }
 
     return (
-        <div className="Add">
+        <div className="App">
             <div>
-                <h3>Addition</h3>
-                    <label>Number 1: </label>
-                    <input 
-                    type="number"
-                    required
-                    value={numberOne}
-                    onChange={(e) => setNumberOne(+e.target.value)}
-                    />
-                    <br></br>
-                    <label>Number 2: </label>
-                    <input 
-                    type="number"
-                    required
-                    value={numberTwo}
-                    onChange={(e) => setNumberTwo(+e.target.value)}
-                    />
-                    <br></br>
-                    <button 
-                        onClick={addNumber}
-                        > Total 
-                    </button>   
-                    <h2 role="h2">{result}</h2>             
+                <h3>Addition Component</h3>
+                <label>Number 1: </label>
+                <input 
+                data-testid="iNumberOne"
+                type="number"
+                required
+                value={numberOne}
+                onChange={(e) => setNumberOne(+e.target.value)}
+                />
+                <br></br>
+                <label>Number 2: </label>
+                <input 
+                data-testid="iNumberTwo"
+                type="number"
+                required
+                value={numberTwo}
+                onChange={(e) => setNumberTwo(+e.target.value)}
+                />
+                <br></br>
+                <button data-testid="resultId"
+                    onClick={addNumber}
+                    > Total 
+                </button>   
+                <h2 className='result' role="h2">{result}</h2>             
             </div>
         </div>
     )
