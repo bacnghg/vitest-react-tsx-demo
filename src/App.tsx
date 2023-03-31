@@ -6,13 +6,14 @@ import { useTotal } from './hooks/useTotal'
 
 function App(){
     // const [open, setOpen] = useState(false)
-    // const [numberOne, setNumberOne] = useState(0)
-    // const [numberTwo, setNumberTwo] = useState(0)
+    const [numberOne, _setNumberOne] = useState(0)
+    const [numberTwo, _setNumberTwo] = useState(0)
     // const [result, setResult] = useState(numberOne + numberTwo)
-    const { numberOne, setNumberOne, numberTwo, setNumberTwo, result, setResult} = useTotal()
+    const {  setNumberOne,  setNumberTwo, result} = useTotal()
 
     function addNumber() {
-        setResult(numberOne + numberTwo)
+        setNumberOne(numberOne)
+        setNumberTwo(numberTwo)
     }
 
     return (
@@ -23,18 +24,16 @@ function App(){
                 <input 
                 data-testid="iNumberOne"
                 type="number"
-                required
                 value={numberOne}
-                onChange={(e) => setNumberOne(+e.target.value)}
+                onChange={(e) => _setNumberOne(+e.target.value)}
                 />
                 <br></br>
                 <label>Number 2: </label>
                 <input 
                 data-testid="iNumberTwo"
                 type="number"
-                required
                 value={numberTwo}
-                onChange={(e) => setNumberTwo(+e.target.value)}
+                onChange={(e) => _setNumberTwo(+e.target.value)}
                 />
                 <br></br>
                 <button data-testid="resultId"

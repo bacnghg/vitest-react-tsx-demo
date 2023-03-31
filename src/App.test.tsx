@@ -31,11 +31,12 @@ describe("App test func", () => {
         render(<App />);
         expect(screen.getByText(/Number 2:/i)).toBeDefined
     })
-    test('Test click input numberone', () => {
+    test('Test click input numbertwo', () => {
         render(<App />);
         const buttonElm = screen.getByTestId('iNumberTwo')
-        fireEvent.click(buttonElm)
-        expect(screen.getByText(/0/i)).toBeDefined
+        //fireEvent.click(buttonElm)
+        expect(buttonElm).toB
+        
     })
 
     // button total
