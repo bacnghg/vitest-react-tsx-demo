@@ -9,7 +9,7 @@ describe("App test func", () => {
       await result.current.setNumberOne(3);
       await result.current.setNumberTwo(4);
 
-      console.log("result", result.current);
+    //   console.log("result", result.current);
     });
 
     // expect(result.current.result).toBe(30);

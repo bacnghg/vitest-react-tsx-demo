@@ -30,6 +30,8 @@ function App(){
                 <br></br>
                 <label>Number 2: </label>
                 <input 
+                name='iNumberTwoID'
+                role="iNumber2"
                 data-testid="iNumberTwo"
                 type="number"
                 value={numberTwo}
